@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+* {
+  box-sizing: border-box;
+  color: white;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+body{
+  padding: 0;
+  margin: 0;
+  background-color: rgb(21, 21, 21);
+  font-family: 'Inter', sans-serif;
+}
+.navbaar{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem 0;
+  background-color: #06212d;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Rowdies', cursive;
+  width: 90vw;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.navbaar span>img{
+  width: 50px;
+  cursor: pointer;
+}
+.navbaar span{
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 2.6rem;
+  font-weight: bold;
+  gap: 0.5rem;
+}
+.navbaar input{
+  width: 50vw;
+  height: 6vh;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  outline: none;
+  border: none;
+  font-family: monospace;
+  color: rgb(20, 20, 20);
+}
+.navbaar span:last-child{
+  background-color: white;
+  border-radius: 8px;
+}
+.gifSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.trendingSec{
+  width: 90vw;
+}
+.parent{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.trendlogo{
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.6rem 0;
+  margin: 0;
+  font-size: 1.7rem;
+  color: white;
+  font-weight: bold;
+}
+.trendlogo>img{
+  height: 25px;
+}
+.trendGif{
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: scroll;
+}
+.trendGif>img{
+  height: 130px;
+  border-radius: 6px;
+  cursor: pointer;
+  padding: 0.4rem 0;
+}
+.trendGif {
+  --scrollbarBG: #4d4d4d;
+  --thumbBG: #7f7f7f;
+}
+.trendGif::-webkit-scrollbar {
+  width: 11px;
+}
+.trendGif {
+  scrollbar-width: thin;
+  scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+.trendGif::-webkit-scrollbar-track {
+  background: var(--scrollbarBG);
+}
+.trendGif::-webkit-scrollbar-thumb {
+  background-color: var(--thumbBG) ;
+  border-radius: 6px;
+  border: 3px solid var(--scrollbarBG);
+}
+.cardGif{
+  width: 90vw;
+  margin-top: 1rem;
+}
+.poster{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding-top: 2rem;
+  background-color: #06212d;
+  border-radius: 10px;
+}
+.cardItem{
+  position: relative;
+}
+.gifimage{
+  height: 12rem;
+  width: 19rem;
+  cursor: pointer;
+}
+.profileSec img:first-child{
+  width: 35px;
+  height: 35px;
+}
+.profileSec{
+  position: absolute;
+  bottom: 0;
+  padding: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'Rowdies', cursive;
+  font-size: 0.8rem;
+  border-bottom-right-radius: 10px;
+}
+.varifiedUser{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+}
+.varifiedUser>img{
+  width: 15px;
+  height: 15px;
+}
+.loadMore{
+  width: 100%;
+  margin: 1rem 0;
+  background-color: #06212d;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 0.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.loadMore>img{
+  width: 30px;
+}
+.notFound{
+  width: 200px;
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 480px){
+  .gifimage{
+      height: auto;
+    }
+    .navbaar input{
+      height: 38px;
+      font-size: 1.2rem;
+    }
+    .navbaar span>img{
+      width: 30px;
+      cursor: pointer;
+    }
+    .navbaar span:last-child{
+      background-color: white;
+      border-radius: 8px;
+    }
+    .poster{
+      gap: 1rem;
+    }
+    .navbaar span>img:first-child{
+      width: 50px;
+    }
+    .navbaar span>img:last-child{
+      width: 38px;
+    }
+}
