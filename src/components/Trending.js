@@ -6,7 +6,7 @@ const Trending = () => {
     useEffect(_ => {
         (async _ => {
             const response = await Axios.get(
-              `https://api.giphy.com/v1/gifs/trending?api_key=NJ1oCEZHbFkjRgOsxRTyGJx3LzNXZjEw&limit=25&rating=g`,
+              `https://api.giphy.com/v1/gifs/trending?api_key=NJ1oCEZHbFkjRTyGJx3LzNXZjEw&limit=25&rating=g`,
             )
             const data = response.data;
             setTrend(data.data)
