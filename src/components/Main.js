@@ -18,7 +18,7 @@ const Main = () => {
     try{
       (async _ => {
         const response = await Axios.get(
-          `https://api.giphy.com/v1/gifs/search?api_key=NJ1oCEZHbFkjRgOsxRTyGJx3LzNXZjEw&q=${value}&limit=100&offset=0&rating=g&lang=en`,
+          `https://api.giphy.com/v1/gifs/search?api_key=NJ1oCEZHbFkjRgGJx3LzNXZjEw&q=${value}&limit=100&offset=0&rating=g&lang=en`,
         )
         const data = response.data;
         console.log(data)
